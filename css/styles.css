@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif !important;
+	text-transform: capitalize;
+}
+#carouselExampleAutoplaying .carousel-item img {
+	height: 700px;
+	margin: 0 auto;
+	/* background-position: center; */
+	object-fit: cover;
+}
+
+#carouselExampleAutoplaying {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+.caro-box {
+	background-color: #03045e;
+	color: white;
+	border-radius: 10px;
+}
+
+.caro-box h5 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.styled-btn {
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
