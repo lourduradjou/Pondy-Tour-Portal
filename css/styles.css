@@ -3,7 +3,15 @@
 body {
 	font-family: 'Poppins', sans-serif !important;
 	text-transform: capitalize;
+	overflow-x: hidden;
 }
+#adventure {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+	background-repeat: no-repeat;
+	background-size: auto 60%;
+	background-position: center;
+}
+
 #carouselExampleAutoplaying .carousel-item img {
 	height: 700px;
 	margin: 0 auto;
@@ -15,6 +23,36 @@ body {
 	width: 100%;
 	margin-top: 50px;
 	margin-bottom: 100px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: black;
+}
+#adventure .col .card {
+	overflow: hidden;
+}
+
+#adventure .col .card img {
+	transition: transform 0.5s ease; /* Add transition to the image for smooth scaling */
+}
+
+#adventure .col .card img:hover {
+	transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.col {
+	height: auto;
+	max-width: 500px !important;
+	margin: 0px 20px !important;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
 }
 
 .caro-box {
@@ -28,12 +66,100 @@ body {
 	font-size: 30px;
 }
 
-.material-symbols-outlined {
-	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+#adventure .card h5 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
 }
-
 .styled-btn {
 	display: flex;
 	margin: 0 auto;
 	justify-content: space-between;
 }
+
+.styled-btn2 {
+	padding: 10px 20px;
+	border-radius: 20px;
+	letter-spacing: 3px;
+	font-size: 20px;
+	margin: 10px;
+	border: 1px solid gray;
+	color: rgb(0, 0, 0);
+	overflow: hidden;
+	background-color: gray;
+	transition: background-color 0.2s ease;
+}
+
+.styled-btn2:hover {
+	background-color: rgb(73, 69, 69);
+	border: 1px solid rgb(68, 68, 68);
+	color: snow;
+}
+.contact-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%; /* Make the container full height */
+	height: 100%;
+	margin-bottom: 300px;
+	margin-top: 40px;
+	position: relative;
+	bottom: 20px;
+}
+
+.bg1 {
+	width: 100%;
+	height: 100vh;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="%23FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>');
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	bottom: 20px;
+}
+
+.inner-contact {
+	width: 500px;
+	height: auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-image: linear-gradient(
+		to right,
+		rgb(0, 16, 133),
+		rgb(255, 0, 153)
+	);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-div {
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-div label {
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: snow;
+}
+
+.input-div input,
+.input-div textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 5px;
+}
+
+.input-div textarea {
+	height: 150px; /* Adjust the height as needed */
+	resize: vertical; /* Allow vertical resizing */
+}
+
+.input-div label {
+	font-size: 20px;
+}
+
+/* footer {
+	background-color: aliceblue;
+} */
